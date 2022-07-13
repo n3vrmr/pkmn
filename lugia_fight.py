@@ -11,6 +11,19 @@ lugia = {"Aeroblast":5,
          "Rain Dance":5}
 
 def lugia_move(move):
+    """
+    Use this function when Lugia (level 47) uses a move in battle to count the
+    PP for their moves.
+
+    Parameters
+    ----------
+    move : name of the move Lugia just used.
+
+    Returns
+    -------
+    lugia : updated dictionary with the PP of each move Lugia has left.
+
+    """
     lugia[f"{move}"] = lugia.get(f"{move}") - 1
     return lugia
 

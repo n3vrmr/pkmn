@@ -25,6 +25,18 @@ nature_chart = pd.DataFrame({"Nature":["Hardy", "Lonely", "Adamant", "Naughty",
                                 "Attack", "Defense", "Sp. Atk", "Sp. Def", "Speed"]})
 
 def stats(nature):
+    """
+    Gives a description of a given nature.
+
+    Parameters
+    ----------
+    nature : Pokémon nature.
+
+    Returns
+    -------
+    None.
+
+    """
     vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
     split = list(nature)
     curiosity = nature_chart[nature_chart["Nature"] == f"{nature}"]
