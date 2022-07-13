@@ -34,7 +34,8 @@ def stats(nature):
 
     Returns
     -------
-    None.
+    curiosity : DataFrame object containing name of the nature and the stats it 
+    changes in a Pokémon.
 
     """
     vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
