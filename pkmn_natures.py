@@ -46,9 +46,7 @@ def stats(nature):
         print(f"A {nature} nature gives Pokémon a boost to the {curiosity['Boost'].values[0]} stat, and a drop to the {curiosity['Drop'].values[0]} stat.")
     if curiosity["Boost"].values[0] == curiosity["Drop"].values[0]:
         print("This is a neutral nature.")
-    else:
-        return
-    return
+    return curiosity
 
 def main():
     print("Gotta catch'em all")
